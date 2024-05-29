@@ -8,9 +8,9 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface AlunoService {
-    @POST("alunos")
+    @POST("Aluno")
     Call<Aluno> criarAluno(@Body Aluno aluno);
 
-    @GET("alunos")
+    @GET("Aluno")
     Call<List<Aluno>> listarAlunos();
 }
